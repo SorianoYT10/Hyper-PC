@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+    overflow-x: hidden;
+}
+
+
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color:aquamarine
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(143, 142, 142);
+}
+
+.sidebar {
+    color:aquamarine;
+    background: linear-gradient(270deg, #0000FD 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #0000FD 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.slide-text, 
+.footer-text {
+    color: aquamarine;
+    margin-inline: auto auto;
+}
+
+footer {
+    background: linear-gradient(270deg, #0000FD 0%, #000000 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite alternate forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.container{
+    min-height: 100vh;
+    background: #08071d;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bg2.jpg") no-repeat center/cover;
+}
+
+.container form{
+    width: 100%;
+    max-width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-direction:column;
+    align-items: center;
+}
+
+.container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.container form input{
+    width: 70%;
+    max-width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container form input::placeholder{
+    color: #ddd
+}
+
+.container form #lastName,
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80px;
+    max-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .container form textarea {
+        width: 90%;  /* Ширина 100% для мобильных устройств */
+        max-width: 90%;  /* Максимальная ширина 100% */
+    }
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+.container form #button{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    align-self: center;
+
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container form #button:hover{
+    opacity: 0.7;
+}
+
+
+.container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(white);
+}
+
+.card row{
+    background-color: #ddd;
+}
+
+.contact-info{
+    text-align: right;
+    text-align: center;
+}
+
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: aquamarine;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    color: aquamarine;
+}
+
+i {
+    font-family: inherit;
+}
+
+
+
+
+.location-map{
+    width: 90%;
+    height: 200px;
+    max-width: 400px;
+}
+
